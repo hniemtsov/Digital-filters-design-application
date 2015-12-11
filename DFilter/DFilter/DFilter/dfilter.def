@@ -1,0 +1,16 @@
+LIBRARY "DFilter"
+
+EXPORTS cheby1 @1
+EXPORTS magnitude @2
+EXPORTS impresp @3
+EXPORTS firfs @4
+EXPORTS ar_model @5
+EXPORTS do_filter @6
+EXPORTS bpsk_model @7
+EXPORTS wn_model @8
+EXPORTS butter @9
+EXPORTS zp2sos @10
+EXPORTS firls @11
+EXPORTS iirlpn @12
+EXPORTS noar @13
+EXPORTS noarK @14

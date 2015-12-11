@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DFDLab">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Introduction">
+			<param name="Local" value="DFDTools\Help\Introduction.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Features">
+			<param name="Local" value="DFDTools\Help\Features.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Algorithms">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using analog prototype">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Chebyshev Filters">
+					<param name="Local" value="DFDTools\Help\Chebyshev Filters.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Optimal filter technics">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Noar">
+					<param name="Local" value="DFDTools\Help\MarkovVector1.htm">
+					</OBJECT>
+			</UL>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Signals">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AR Model">
+				<param name="Local" value="DFDTools\Help\AR Model.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="White noise">
+				<param name="Local" value="DFDTools\Help\White noise.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="BPSK">
+				<param name="Local" value="DFDTools\Help\BPSK signal.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+</UL>
+</BODY></HTML>

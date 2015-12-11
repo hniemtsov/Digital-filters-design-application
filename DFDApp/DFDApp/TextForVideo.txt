@@ -1,0 +1,43 @@
+
+To start using DFDApp you should go in folder where you unpacked downloaded 
+archive file and find DFDApp.exe file and run it.
+
+After DFDApp was started click File->New from main menu to open dialog window.
+
+1. The open window is divided by two parts. At the left side of the window 
+there are tree. Each name node of the tree corresponds subset of the algorithm
+or filter design technics that have common properties.
+At the right side of the window there are icons of algorithms.
+Well, click on "From Analog" at the left and then click on "cheby1" icon at
+the right. After that click on "OK" bellow button.
+
+2.  We can see that tab page in main window was added and buttons from Main
+ menu are active. 
+
+3.  The tab page area is devided by two parts. At the left side you can set 
+filter parameters. For chosen algorithm they are: filter order, value of the 
+ripple in the pass-band, filter type: band-pass, band-stop, high-pass, low-pass,
+ sample rate, and last field is cutoff frequency. Last field is lighted in red. This is signal about
+that field consists incorrect value. In this case buttons from right side of
+ the tab page area are inactivated. Set the lighted in red fields with true
+ parameters and buttons are will becomes active. 
+
+3. Well. Set of the buttons from menu at the right side allow control filter
+ characteristics such as:
+frequency responce, impulse response, map of zeros and poles of the system 
+function of the  designed filter, and filter coefficients.
+
+4. Back to the buttons from main window menu and click on the next button: 
+filter realization. You can see that tab filter page is updated and now at the
+ left side there are parameters of the filter realization. At the right side 
+there are buttons to get: coefficients of the second  order sections, button to
+ generate C code for filtering in cascaded form of the second order sections. 
+And it is all for now. But in the future I have planned to complete this feature.
+
+5  And we got to the last button in the main window menu. It is button for test
+ filter on the test signals. Click on it. Again filter page area is updated.
+ And as you can expected area is devided by two parts. All are similary:at the 
+left side of the filter page are parameters of the test signal and at the right 
+side are features for control characteristics of input and output signal .
+
+Thank you for taking the time. 

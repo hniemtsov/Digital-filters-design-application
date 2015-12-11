@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{114CAE7B-C681-4BDD-A8EC-87210EA82D70}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DFDLab.DFDTools</RootNamespace>
+    <AssemblyName>DFDLab.DFDTools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutDFDLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutDFDLab.Designer.cs">
+      <DependentUpon>AboutDFDLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbstractSignal.cs" />
+    <Compile Include="ARSignal.cs" />
+    <Compile Include="ARsignalTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ARsignalTab.Designer.cs">
+      <DependentUpon>ARsignalTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButterFilter.cs" />
+    <Compile Include="Cheb2Filter.cs" />
+    <Compile Include="Cheby2Tab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cheby2Tab.Designer.cs">
+      <DependentUpon>Cheby2Tab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButterTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButterTab.Designer.cs">
+      <DependentUpon>ButterTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBoxSignal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BPSKSignalTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BPSKSignalTab.Designer.cs">
+      <DependentUpon>BPSKSignalTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BPSKSignal.cs" />
+    <Compile Include="NoarTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NoarTab.Designer.cs">
+      <DependentUpon>NoarTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoarFilter.cs" />
+    <Compile Include="IirLpFilter.cs" />
+    <Compile Include="IirLpTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IirLpTab.Designer.cs">
+      <DependentUpon>IirLpTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnivalClasses\ComputeKorr.cs" />
+    <Compile Include="WNsignalTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WNsignalTab.Designer.cs">
+      <DependentUpon>WNsignalTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WNSignal.cs" />
+    <Compile Include="GeneralSignalTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ECGSignalTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ECGSignalTab.Designer.cs">
+      <DependentUpon>ECGSignalTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterSignalTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FilterSignalTab.Designer.cs">
+      <DependentUpon>FilterSignalTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirFSFilter.cs" />
+    <Compile Include="FirFSTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirFSTab.designer.cs">
+      <DependentUpon>FirFSTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirLSFilter.cs" />
+    <Compile Include="FirLSTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirLSTab.Designer.cs">
+      <DependentUpon>FirLSTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAModulatedSignalTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QAModulatedSignalTab.Designer.cs">
+      <DependentUpon>QAModulatedSignalTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignalProperty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SignalProperty.Designer.cs">
+      <DependentUpon>SignalProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EllipFilter.cs" />
+    <Compile Include="EllipTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EllipTab.Designer.cs">
+      <DependentUpon>EllipTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignalParameters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SignalParameters.Designer.cs">
+      <DependentUpon>SignalParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnivalClasses\AbsFreqz.cs" />
+    <Compile Include="AbstractFilter.cs" />
+    <Compile Include="Cheb1Filter.cs" />
+    <Compile Include="Cheby1Tab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cheby1Tab.Designer.cs">
+      <DependentUpon>Cheby1Tab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DFDWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFDWizard.Designer.cs">
+      <DependentUpon>DFDWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterProperty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FilterProperty.Designer.cs">
+      <DependentUpon>FilterProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FilterSelector.Designer.cs">
+      <DependentUpon>FilterSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnivalClasses\CodeGen.cs" />
+    <Compile Include="UnivalClasses\FilterMeandr.cs" />
+    <Compile Include="UnivalClasses\ImpzResp.cs" />
+    <Compile Include="MethodSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MethodSelector.Designer.cs">
+      <DependentUpon>MethodSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myclass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SoSPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SoSPanel.Designer.cs">
+      <DependentUpon>SoSPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOSRealization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SOSRealization.Designer.cs">
+      <DependentUpon>SOSRealization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabFilterPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UnivalClasses\Phase.cs" />
+    <Compile Include="UnivalClasses\TestSignal.cs" />
+    <Compile Include="UnivalClasses\TF2SOS.cs" />
+    <Compile Include="UnivalClasses\TF2TXT.cs" />
+    <Compile Include="UnivalClasses\ZeroPoleMap.cs" />
+    <Compile Include="WraperISCMS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ARsignalTab.resx">
+      <DependentUpon>ARsignalTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BPSKSignalTab.resx">
+      <DependentUpon>BPSKSignalTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Help\QuasyNewton1.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="NoarTab.resx">
+      <DependentUpon>NoarTab.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IirLpTab.resx">
+      <DependentUpon>IirLpTab.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WNsignalTab.resx">
+      <DependentUpon>WNsignalTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFDWizard.resx">
+      <DependentUpon>DFDWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECGSignalTab.resx">
+      <DependentUpon>ECGSignalTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterSelector.resx">
+      <DependentUpon>FilterSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterSignalTab.resx">
+      <DependentUpon>FilterSignalTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirFSTab.resx">
+      <DependentUpon>FirFSTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirLSTab.resx">
+      <DependentUpon>FirLSTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MethodSelector.resx">
+      <DependentUpon>MethodSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FromAnalogIco\cheby1.ico" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromAnalogIco\cheby2.ico" />
+    <EmbeddedResource Include="Config.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FromAnalogIco\ellip.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cheby1Tab.resx">
+      <DependentUpon>Cheby1Tab.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromAnalogIco\butter.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cheb1SpecBMP\Cheb1Band.bmp" />
+    <EmbeddedResource Include="Cheb1SpecBMP\Cheb1Low.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Cheby2Tab.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cheb1SpecBMP\Cheb1High.bmp" />
+    <EmbeddedResource Include="Cheb1SpecBMP\Cheb1Stop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="QAModulatedSignalTab.resx">
+      <DependentUpon>QAModulatedSignalTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoSPanel.resx">
+      <DependentUpon>SoSPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOSRealization.resx">
+      <DependentUpon>SOSRealization.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SOSRealizationBMP\DF1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SOSRealizationBMP\DF2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolBarBMP\NumDenCoef.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FilterProperty.resx">
+      <DependentUpon>FilterProperty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolBarBMP\Stop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolBarBMP\Impulse2.bmp" />
+    <EmbeddedResource Include="ToolBarBMP\Magnitude.bmp" />
+    <EmbeddedResource Include="ToolBarBMP\Specification.bmp" />
+    <EmbeddedResource Include="ToolBarBMP\ZeroPole.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolStripButton1.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolBarBMP\CodeGen.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolBarBMP\Step.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutDFDLab.resx">
+      <DependentUpon>AboutDFDLab.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheby2Tab.resx">
+      <DependentUpon>Cheby2Tab.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButterTab.resx">
+      <DependentUpon>ButterTab.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EllipTab.resx">
+      <DependentUpon>EllipTab.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolBarBMP\Phase.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SignalIcon\Sine.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SignalProperty.resx">
+      <DependentUpon>SignalProperty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignalIcon\WhiteN.bmp" />
+    <EmbeddedResource Include="SignalParameters.resx">
+      <DependentUpon>SignalParameters.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolBarBMP\PowerSignal.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FromAnalogIco\firfs.ico" />
+    <EmbeddedResource Include="FromAnalogIco\firls.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LinearPhaseSpecBMP\FreqSampleType1.bmp" />
+    <EmbeddedResource Include="LinearPhaseSpecBMP\FreqSampleType2.bmp" />
+    <EmbeddedResource Include="LinearPhaseSpecBMP\LinearPhase1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SignalIcon\ARModel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Help\BPSK signal.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Help\AR Model.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolBarBMP\BookBut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Help\White noise.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FromAnalogIco\iirlpn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FromAnalogIco\Icon1.ico" />
+    <Content Include="Help\MarkovVector.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="ToolBarBMP\Korr.bmp" />
+    <EmbeddedResource Include="FromAnalogIco\noar.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

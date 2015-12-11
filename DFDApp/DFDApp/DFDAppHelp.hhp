@@ -1,0 +1,21 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=DFDALabHelp.chm
+Contents file=DFDAppHelpContents.hhc
+Default topic=DFDTools\Help\Introduction.htm
+Display compile progress=No
+Index file=DFDAppIndex.hhk
+Language=0x409 Английский (США)
+Title=DFDLab
+
+
+[FILES]
+DFDTools\Help\AR Model.htm
+DFDTools\Help\BPSK signal.htm
+DFDTools\Help\White noise.htm
+DFDTools\Help\Introduction.htm
+DFDTools\Help\Chebyshev Filters.htm
+DFDTools\Help\Features.htm
+
+[INFOTYPES]
+

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FILTERS>
+  <ADAPTIVE Text="Adaptive Filters">
+    <ALGORITHM Text="Least Mean Squares">
+      <MFILE File ="blms">
+        <IMG SRC="blms.png"/>
+        <DSCR Text=""/>
+      </MFILE>
+      <MFILE File ="nlms">
+        <IMG SRC="nlms.png"/>
+        <DSCR Text=""/>
+      </MFILE>
+      <MFILE File ="lms">
+        <IMG SRC="lms.png"/>
+        <DSCR Text=""/>
+      </MFILE>
+    </ALGORITHM>
+    <ALGORITHM Text="Recursive Least Squares">
+      <MFILE File ="ftf">
+        <IMG SRC="ftf.png"/>
+        <DSCR Text=""/>
+      </MFILE>
+      <MFILE File ="hrls">
+        <IMG SRC="hrls.png"/>
+        <DSCR Text=""/>
+      </MFILE>
+    </ALGORITHM>
+  </ADAPTIVE>
+  <OPTIMAL Text="Optimal Filters">
+    <ALGORITHM Text="Quasi optimal linear">
+      <MFILE File ="noar">
+        <IMG SRC="noar.ico"/>
+        <DSCR Text="Optimal algorithm of filtering based on recurcive equation of the posterior PDF for Markov model of useful signal."/>
+      </MFILE>
+    </ALGORITHM>
+  </OPTIMAL>  
+  <OPTIMIZATION Text="Using Optimization">
+      <IMPULSE Text="IIR">
+        <ALGORITHM Text="Quasi-Newton with arbitrary phase">
+          <MFILE File ="iirlpnorm">
+            <IMG SRC="iirlpn.ico"/>
+            <DSCR Text="Quasi-Newton algorithm of the designed filter with arbitrary phase and least error of the amplitude"/>
+          </MFILE>
+        </ALGORITHM>
+        </IMPULSE>
+      <IMPULSE Text="FIR">
+          <ALGORITHM Text="Linear Phase-Frequency Response">
+              <MFILE File ="firls">
+                  <IMG SRC="firls.ico"/>
+                  <DSCR Text="Design linear phase FIR filter with desired frequency response based on the squeare error criterion."/>
+              </MFILE>
+              <MFILE File ="remez">
+                  <IMG SRC="firremez.ico"/>
+                  <DSCR Text="Design linear phase FIR filter with desired frequency response based on the minimax criterion."/>
+              </MFILE>
+          </ALGORITHM>
+      </IMPULSE>
+  </OPTIMIZATION>
+  <UFFT Text="Using FFT">
+    <ALGORITHM Text="Linear Phase-Frequency Response">
+      <MFILE File ="firfs">
+        <IMG SRC="firfs.ico"/>
+        <DSCR Text="Design linear phase FIR filter with desired frequency response using approximation of frequency points."/>
+      </MFILE>
+    </ALGORITHM>
+  </UFFT>
+    <ANALOG Text="From Analog">
+      <MFILE File ="cheby1">
+        <IMG SRC="cheby1.ico"/>
+        <DSCR Text="Designs LPF, BPF, HPF, and BSF Chebyshev Type I filters that are equiripple in the passband and monotonic in the stopband."/>
+      </MFILE>
+      <MFILE File ="cheby2">
+        <IMG SRC="cheby2.ico"/>
+        <DSCR Text="Designs lowpass, highpass, bandpass, and bandstop Chebyshev Type II filters that are monotonic in the passband and equiripple in the stopband."/>
+      </MFILE>
+      <MFILE File ="ellip">
+        <IMG SRC="ellip.ico"/>
+        <DSCR Text="Designs LPF, BPF, HPF, and BSF elliptic filters that offer steeper rolloff characteristics than Butterworth or Chebyshev filters, but are equiripple in both the pass- and stopbands."/>
+      </MFILE>
+    <MFILE File ="butter">
+      <IMG SRC="butter.ico"/>
+      <DSCR Text="Designs lowpass, bandpass, highpass, and bandstop Butterworth filters that are maximally flat in the passband and monotonic overall."/>
+    </MFILE>
+  </ANALOG>
+</FILTERS>
