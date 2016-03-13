@@ -1,5 +1,5 @@
 # Digital-filters-design-application
-Desktop application for prototyping digital filters
+.Net Desktop application for prototyping digital filters
   <p><span style="color: #00ccff;">DFDLab is a free tool to design digital filters.</span></p>
 <p><span style="color: #00ccff;">DFDLab allows to:</span></p>
 <p style="padding-left: 30px;"><span style="color: #00ccff;">•  Generate coefficients of IIR and FIR both type of filters.</span></p>
