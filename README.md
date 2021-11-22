@@ -9,4 +9,5 @@
 <p style="padding-left: 30px;"><span style="color: #00ccff;">•  Specify different possible ways of filter realization: cascaded or parallel form of less order filters</span></p>
 <p style="padding-left: 30px;"><span style="color: #00ccff;">•  Generate &#8220;C&#8221; code for chosen filter realization.</span></p>
 <p style="padding-left: 30px;"><span style="color: #00ccff;">•  Save/Open file with filter parameters.</span></p>
+
 ![dfdlab](https://cloud.githubusercontent.com/assets/16180299/11733586/c9592446-a013-11e5-8b30-9704987e9d24.jpg)
